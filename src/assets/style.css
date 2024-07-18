@@ -1,0 +1,221 @@
+@import './base.css';
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    line-height: 1.6;
+    
+}
+
+.container {
+    margin: 0 auto;
+}
+
+.header {
+    background-image: linear-gradient(to right, rgba(192, 197, 92, 0.369), rgba(140, 57, 57, 0.438));
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 2rem; /* Увеличил отступ слева и справа для лучшего визуального эффекта */
+    animation: blink 2s infinite alternate;
+    text-align: left; /* Выравнивание текста слева */
+}
+
+@keyframes blink {
+    0% {
+        background-color: #ffffff6f;
+    }
+    100% {
+        background-color: #ffffff75;
+    }
+}
+
+
+.header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__logo {
+    font-size: 1.5rem;
+    margin-left: 25px;
+}
+
+/*HEADER ПОИСК КНОПКА*/
+.header__search {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.header__search-input {
+    width: 350px; 
+    height: 35px;
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 7px;
+    transition: all 0.3s ease; 
+}
+
+.header__search-button {
+    position: absolute; 
+    right: 0;
+    transform: translateY(0%);
+    width: 30px;
+    height: 100%;
+    padding: 0;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    border-radius: 0 7px 7px 0; 
+    transition: background-color 0.3s ease;
+    color: #fff; 
+    font-weight: bold; 
+
+}
+  
+  .header__search-input:focus {
+    outline: none; 
+    border-color: rgba(0, 38, 255, 0.38); 
+    box-shadow: 0 0 5px rgba(0, 0, 255, 0.14);
+  }
+  
+
+
+.header__search-button:hover {
+    background-color: #0057b34c; 
+}
+
+.header__search-button img {
+    height: 37%;
+}
+
+/* HEADER МИНСК ГОРОД ВРЕМЯ ДОСТАВКИ*/
+
+.header__delivery-city{
+    font-weight: bold;
+    font-size: 13px;
+    color: #000000;
+}
+
+.header__delivery-time{
+    font-size: 10px;
+    color: #333333;
+}
+
+/* HEADER номер И почта*/
+.header__contact-info {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: #555;
+    color: #fff;
+    background: transparent;
+    flex-direction: column; 
+    align-items: flex-start;
+}
+
+.header__phone{
+    font-weight: bold;
+    font-size: 13px;
+    color: #000000;
+}
+
+.header__email{
+    font-size: 10px;
+    color: #333333;
+    margin-left: auto;
+}
+
+.header__phone a,
+.header__email a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.header__phone a:hover,
+.header__email a:hover {
+    text-decoration: underline;
+}
+
+/* HEADER Кнопки КОРЗИНА И ТД*/
+
+.header__call-button {
+    margin-left: 20px;
+    background-color: #d7ac0021;
+    background-image: linear-gradient(to right, #eeff0028, #bfff0026); 
+    border: none;
+    color: white;
+    height: 45px;
+    padding: 1px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .header__call-button:hover {
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
+  }
+
+
+.header__actions button {
+    border: none;
+    cursor: pointer;
+    margin: 0 20px;
+    position: relative;
+    overflow: hidden;
+    background: transparent;
+    transition: color 0.3s ease-in-out;
+  }
+
+
+  .header__actions button img {
+    width: 24px;
+    height: 24px;
+  }
+
+
+
+
+
+
+
+
+
+
+/* MAIN*/
+
+.main {
+    padding: 2rem 0;
+}
+
+
+
+
+
+
+/* FOOTER*/
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer ul li {
+    margin-bottom: 0.5rem
+}
